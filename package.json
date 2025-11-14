@@ -11,7 +11,7 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"gh-pages": "cross-env BASE_PATH=/portofolio npm run build && npx gh-pages -d build"
+		"gh-pages": "cross-env BASE_PATH=/portofolio npm run build && node scripts/fix-paths.js && npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
