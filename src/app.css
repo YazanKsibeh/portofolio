@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 .poppins {
+	font-family: 'Poppins' sans-serif;
+}
+
+/* Tech Stack Styles */
+.tech-stack {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tech-item {
+	background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-align: center;
+	transition: all 0.2s ease;
+	border: 1px solid rgba(124, 58, 237, 0.3);
+	box-shadow: 0 2px 4px rgba(124, 58, 237, 0.2);
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	justify-content: center;
+}
+
+.tech-icon {
+	width: 20px;
+	height: 20px;
+	filter: brightness(0) invert(1);
+	object-fit: contain;
+}
+
+.tech-item:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(124, 58, 237, 0.3);
+	background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 100%);
+}
