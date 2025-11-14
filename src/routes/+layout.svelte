@@ -14,7 +14,6 @@
 	function goBottom() {
 		window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
 	}
-	export const prerender = true;
 </script>
 
 <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
